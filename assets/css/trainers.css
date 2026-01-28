@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+     max-width: 2000px;
+    box-sizing: border-box;
+}
+
+
+
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: linear-gradient(20deg, #78f7c2 20%, rgb(146, 255, 119) 100%);
+}
+
+.container {
+   
+    display: flex;
+    margin: 0 auto;
+    padding: 32px;
+    max-width: 12000px;
+}
+
+
+.trainers-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    padding: 16px;
+    
+}
+
+.trainer-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 32px auto;
+    padding: 32px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #81fbff 0%, #1bfda7 50%);
+    border-radius: 28px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0 ,0.3);
+    flex: 1 1 calc(33.33% - 32px);
+    max-width: calc(33.33% - 32px);
+   
+}
+
+.trainer-info {
+    padding: 32px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.trainer-image {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 28px;
+    background: linear-gradient(135deg, #dff18c 0%, #6aeebb 50%)
+}
+
+.trainer-name {
+    font-size: 16px;
+    font-weight: bold;
+    color:#333;
+    text-transform: capitalize;
+    margin: 1;
+}
+
+
+.nav-logo img{
+    width: 150px;
+    height: auto;
+}
+
+.trainer-status{
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.trainer-badges{
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.trainer-cintas{
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.trainer-region{
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    
+}
+
+.kanto-active{
+    background: linear-gradient(20deg, #ffffff 20%, rgb(141, 255, 255) 100%);
+}
+
+.hoenn-active{
+    background: linear-gradient(20deg, #ffffff 20%, rgb(194, 1, 253) 100%);
+}
+
+.kalos-active{
+    background: linear-gradient(20deg, #fdfdfd 20%, rgb(253, 207, 1) 100%);
+}
+
+.sinnoh-active{
+    background: linear-gradient(20deg, #ffffff 20%, rgb(217, 255, 0) 100%);
+}
+
+.johto-active{
+    background: linear-gradient(20deg, #ffffff 20%, rgb(253, 1, 85) 100%);
+}
+
+.teselia-active{
+    background: linear-gradient(20deg, #ffffff 20%, rgb(1, 253, 156) 100%);
+}
+
+
+
+
+
+
+.cintas-active{
+    background: linear-gradient(20deg, #ffffff 20%, rgb(253, 83, 216) 100%);
+}
+
+
+
+.badges-active{
+    background: linear-gradient(20deg, #ffffff 20%, rgb(247, 83, 83) 100%);
+}
+
+
+
+.status-active{
+    background: linear-gradient(20deg, #ffffff 20%, rgb(51, 255, 0) 100%);
+}
+
+.status-champion{
+    background: linear-gradient(20deg, #ffffff 20%, rgb(251, 255, 0) 100%);
+}
+
+
+@media screen and (max-width: 900px) {
+    .trainers.grid {
+        gap: 16px;             
+    }
+    .trainer-card{
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Mobile (hasta 480px) */
+@media screen and (max-width: 768px) {
+    .trainers.grid {
+        width: 100%;
+        gap: 8px;             
+    }
+    .trainer-card{
+        flex: 100%;
+        gap: 8px;
+    }
+}
+
+.trainer-card:hover{
+    transform: translate(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0,0,0.4);
+    transition: all 0.3s ease;
+}
+
